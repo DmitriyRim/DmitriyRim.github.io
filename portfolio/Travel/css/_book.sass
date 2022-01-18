@@ -1,0 +1,42 @@
+.book
+  padding: 0 20px 50px 20px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__content
+    font-family: 'Poppins', sans-serif
+    color: #5E6282
+    & .section__title,
+    & .section__title span
+      text-align: left
+  &__img
+    flex-basis: 85%
+    & img
+      width: 100%
+  &__text
+    padding-left: 68px
+    position: relative
+    margin-bottom: 50px
+    max-width: 400px
+    &:before
+      display: inline-block
+      content: ''
+      width: 47px
+      height: 48px
+      position: absolute
+      top: 3px
+      left: 0
+    &-item1:before
+      background: url("../img/book_icon1.svg") no-repeat center
+    &-item2:before
+      background: url("../img/book_icon2.svg") no-repeat center
+    &-item3:before
+      background: url("../img/book_icon3.svg") no-repeat center
+    & h3
+      font-weight: bold
+      font-size: 16px
+      margin-bottom: 5px
+    & p
+      font-size: 16px
+      line-height: 124.5%
+      margin: 0

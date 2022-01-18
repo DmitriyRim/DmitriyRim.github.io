@@ -1,0 +1,182 @@
+.nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__menu
+    display: flex
+    justify-content: space-between
+    flex-basis: 74%
+  &__item
+    display: inline-block
+    list-style: none
+    font-size: 17px
+    line-height: 22px
+  &__btn
+    padding: 9px 22px
+    border: 1px solid #212832
+    border-radius: 5px
+    text-decoration: none
+    color: #212832
+    transition: all .5s
+    &:hover
+      color: #DF6951
+      border-color: #DF6951
+  &__link
+    color: #212832
+    font-weight: 500
+    font-family: 'Open Sans', sans-serif
+    font-size: 17px
+    line-height: 22px
+    text-decoration: none
+    position: relative
+    display: block
+    padding-bottom: 5px
+    margin: 0 10px
+  &__link,
+  &__link:after,
+  &__link:before
+     transition: all .5s
+  &__link:after
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    width: 0%
+    content: '.'
+    color: transparent
+    background: #DF6951
+    height: 1px
+  &__link:hover
+    color: #DF6951
+  &__link:hover:after
+    width: 100%
+  &__icon
+    display: none
+    position: relative
+    width: 30px
+    height: 20px
+    cursor: pointer
+    &:before,
+    &:after,
+    & span
+      left: 0
+      position: absolute
+      height: 10%
+      width: 100%
+      transition: all .3s ease 0s
+      background-color: #212832
+    &:before,
+    &:after
+      content: ''
+    &:before
+      top: 0
+    &:after
+      bottom: 0
+    & span
+      top: 50%
+      transform: scale(1) translate(0, -50%)
+
+.header
+  padding: 37px 0 110px 0
+  position: relative
+  background-image: url("../img/Decore2.svg")
+  background-repeat: no-repeat
+  background-position: top right
+  background-size: contain
+  &__ellipse
+    position: absolute
+    top: 0
+    left: 0
+  &__content
+    display: flex
+    justify-content: space-between
+  &__img
+    background: url("../img/tourist.png") center no-repeat
+    background-size: contain
+    flex-basis: 52%
+  &__box
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-left: 9px
+    flex-basis: 45%
+    padding-top: 120px
+  &__subtitle
+    font-family: 'Poppins', sans-serif
+    font-weight: bold
+    font-size: 20px
+    line-height: 30px
+    text-transform: uppercase
+    color: #DF6951
+  &__title
+    font-family: 'Volkhov', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 84px
+    line-height: 89px
+    letter-spacing: -0.04em
+    color: #181E4B
+    margin-top: 25px
+    margin-bottom: 14px
+    & span
+      position: relative
+      z-index: 10
+      &:before
+        content: ' '
+        display: inline-block
+        width: 385px
+        height: 12px
+        background-image: url('../img/line.svg')
+        background-size: contain
+        background-repeat: no-repeat
+        position: absolute
+        z-index: -1
+        top: 79px
+        left: -33px
+  &__text
+    font-family: 'Poppins', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 30px
+    color: #5E6282
+    max-width: 470px
+    margin-bottom: 35px
+  &__btns button
+    font-size: 17px
+    line-height: 23px
+    text-align: center
+    color: #FFFFFF
+    background: #F1A501
+    box-shadow: 0 20px 35px rgba(241, 165, 1, 0.15)
+    border-radius: 10px
+    padding: 19px 26px 18px 27px
+    border: none
+    cursor: pointer
+    margin-right: 40px
+    transition: background-color .3s
+    &:hover
+      background: #DF6951
+  &__play
+    font-family: 'Poppins', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 17px
+    line-height: 25px
+    color: #686D77
+    text-decoration: none
+    transition: all .5s
+    &:hover span
+      background: #f39b89
+    & span
+      display: inline-block
+      padding: 15px 19px 14px 22px
+      border-radius: 50%
+      background-color: #DF6951
+      box-shadow: 0 15px 30px rgba(223, 105, 81, 0.3)
+      margin-right: 21px
+      transition: all .5s
+
+
+

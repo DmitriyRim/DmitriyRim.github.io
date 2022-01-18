@@ -1,0 +1,62 @@
+.destinations
+  padding: 0 20px 50px 20px
+  &__box
+    display: flex
+    justify-content: space-between
+    position: relative
+    padding-right: 60px
+    padding-top: 17px
+    &:before
+      display: inline-block
+      content: ''
+      background: url("../img/Decore.svg") no-repeat top center
+      width: 96px
+      height: 252px
+      position: absolute
+      z-index: -1
+      right: 0
+      top: 161px
+  &__card
+    display: flex
+    align-items: flex-end
+    flex-basis: 31%
+    height: 457px
+    overflow: hidden
+    border-radius: 30px
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481)
+    &-rome
+      background: url('../img/Rome.jpg') no-repeat center
+      background-size: cover
+    &-london
+      background: url('../img/London.jpg') no-repeat center
+      background-size: cover
+    &-europe
+      background: url('../img/Europe.jpg') no-repeat center
+      background-size: cover
+  &__text
+    width: 100%
+    padding: 27px 20px 43px 20px
+    background-color: #fff
+    color: #5E6282
+    font-family: 'Poppins', sans-serif
+    font-weight: 500
+    & p
+      margin: 0
+    & > p
+      font-size: 16px
+      margin-top: 20px
+      margin-left: 33px
+      position: relative
+      &:before
+        display: inline-block
+        content: ''
+        width: 20px
+        height: 20px
+        background: url('../img/arr.svg') no-repeat center
+        position: absolute
+        top: 0
+        left: -34px
+  &__price
+    display: flex
+    justify-content: space-between
+    font-size: 18px

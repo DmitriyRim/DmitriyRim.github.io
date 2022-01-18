@@ -1,0 +1,54 @@
+.services
+  padding: 70px 20px 70px 20px
+  background: url("../img/service_decor.svg") right 100px no-repeat
+  &__cards
+    display: flex
+    justify-content: space-between
+    padding-top: 23px
+  &__item
+    max-width: 302px
+    padding: 0 0 35px 35px
+    position: relative
+    &:hover .services__card
+      background: #FFFFFF
+      box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481)
+    &:hover .services__card:before
+      opacity: 1
+  &__card
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    padding: 45px 20px
+    background-color: #fff
+    transition: .3s
+    border-radius: 36px
+    & img
+      margin: 0 auto
+    & h4
+      font-weight: 600
+      font-size: 20px
+      line-height: 27px
+      color: #1E1D4C
+      margin-bottom: 14px
+    & p
+      font-family: 'Poppins', sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 26px
+      text-align: center
+      color: #5E6282
+      margin-top: 0
+    &:before
+      content: ''
+      width: 100px
+      height: 100px
+      position: absolute
+      z-index: -10
+      background: #DF6951
+      border-radius: 30px 0 10px
+      bottom: 0
+      left: 0
+      opacity: 0
+      transition: opacity .3s
